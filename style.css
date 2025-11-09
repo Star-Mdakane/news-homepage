@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --gy200: rgb(216 216 216);
+    --gy300: rgb(197 198 206);
+    --nv600: rgb(94 96 122);
+    --nv950: rgb(0 0 26);
+    --gold: rgb(2333 170 82);
+    --red: rgb(241 93 81);
+}
+
+.nav-p {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    color: var(--nv600);
+}
+
+.article-h {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: 0px;
+    font-weight: 800;
+    color: var(--nv950);
+}
+
+.article-p {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.article-btn {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 4.38px;
+    font-weight: 700;
+    color: var(--nv950);
+}
+
+.aside-h {
+    font-size: 32px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    color: var(--gold);
+
+}
+
+.aside-item-h {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.aside-item-p {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    color: var(--gy300);
+}
+
+.footer-nr {
+    font-size: 32px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    color: var(--red);
+}
+
+.footer-h {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    font-weight: 800;
+    color: var(--nv950);
+}
+
+.footer-p {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    color: var(--nv600);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+
+@media(max-width: 600px) {
+    .nav-p {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        font-weight: 800;
+    }
+
+    .article-h {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 0px;
+        font-weight: 800;
+    }
+}
