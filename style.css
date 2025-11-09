@@ -139,6 +139,7 @@ img {
 
 main {
     max-width: 1112px;
+    width: 77%;
     display: flex;
     flex-direction: column;
     gap: 64px;
@@ -156,6 +157,10 @@ nav ul {
     gap: 2.5rem;
 }
 
+.burger {
+    display: none;
+}
+
 section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -167,6 +172,12 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+}
+
+.hero-img {
+    background: url(./assets/images/image-web-3-desktop.jpg);
+    max-width: 45.625rem;
+    height: 18.75rem;
 }
 
 .hero-content {
@@ -189,12 +200,13 @@ button {
 }
 
 aside {
-
+    width: 100%;
     padding: 2rem 1.5rem;
     background-color: var(--nv950);
 }
 
 .aside-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -240,7 +252,21 @@ aside {
     height: 129px;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 768px) {
+
+    main {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
     .nav-p {
         font-size: 18px;
         line-height: 24px;
@@ -248,10 +274,38 @@ aside {
         font-weight: 800;
     }
 
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        grid-column: 1 / -1;
+
+    }
+
+    .hero-img {
+        background: url(./assets/images/image-web-3-mobile.jpg);
+        max-width: 38rem;
+        max-height: 32rem;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+
     .hero-h {
         font-size: 40px;
         line-height: 40px;
         letter-spacing: 0px;
         font-weight: 800;
+    }
+
+    .footer-list {
+        grid-template-columns: 1fr;
+
+    }
+
+    .footer-list img {
+        height: 127px;
     }
 }
