@@ -155,6 +155,7 @@ header {
 nav ul {
     display: flex;
     gap: 2.5rem;
+    transition: all 200ms;
 }
 
 .burger {
@@ -197,12 +198,14 @@ button {
     padding: 0.5rem 2rem;
     background-color: var(--red);
     text-transform: uppercase;
+    transition: all 200ms;
 }
 
 aside {
     width: 100%;
     padding: 2rem 1.5rem;
     background-color: var(--nv950);
+    transition: all 200ms;
 }
 
 .aside-container {
@@ -234,6 +237,7 @@ aside {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
+    transition: all 200ms;
 }
 
 .footer-list li {
@@ -250,6 +254,28 @@ aside {
 .footer-list img {
     width: 100px;
     height: 129px;
+}
+
+/* Active states */
+
+nav a:hover {
+    cursor: pointer;
+    color: var(--red);
+}
+
+button:hover {
+    background-color: var(--nv950);
+    color: var(--white);
+}
+
+.aside-list li h3:hover {
+    color: var(--gold);
+    cursor: pointer;
+}
+
+.footer-list h4:hover {
+    cursor: pointer;
+    color: var(--red);
 }
 
 @media(max-width: 768px) {
