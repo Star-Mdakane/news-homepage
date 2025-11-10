@@ -114,6 +114,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 300ms ease-in-out;
 }
 
 a {
@@ -269,9 +270,10 @@ aside {
 .menu {
     display: none;
     position: absolute;
-    right: 0;
+    right: -350px;
     top: 0;
     background-color: var(--white);
+    opacity: 0;
     width: 312px;
     height: 669px;
     padding: 27px 21px;
@@ -283,7 +285,6 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 88px;
-
 
     & ul {
         list-style: none;
@@ -301,10 +302,6 @@ aside {
     flex-direction: column;
     gap: 1.5rem;
 }
-
-/* .menu {
-    display: none;
-} */
 
 .menu-list li:hover {
     color: var(--red);
@@ -390,16 +387,20 @@ button:hover {
         height: 127px;
     }
 
-    .menu {
+    .menu.open {
         display: block;
-        transform: translateX(312px);
+        transform: translateX(-312px);
+        opacity: 1;
+        transition: all 300ms ease-in-out;
     }
 }
 
 @media(max-width: 500px) {
-    .menu {
+    .menu.open {
         display: block;
         width: 256px;
-        transform: translateX(312px);
+        transform: translateX(-312px);
+        opacity: 1;
+        transition: all 300ms ease-in-out;
     }
 }
