@@ -202,7 +202,7 @@ section {
     gap: 2rem;
 }
 
-button {
+.content button {
     align-self: flex-start;
     padding: 0.5rem 2rem;
     background-color: var(--red);
@@ -314,7 +314,7 @@ nav a:hover {
     color: var(--red);
 }
 
-button:hover {
+.content button:hover {
     background-color: var(--nv950);
     color: var(--white);
 }
