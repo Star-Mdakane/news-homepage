@@ -15,7 +15,7 @@ const openMenu = () => {
 const closeMenu = () => {
     menu.classList.remove('open');
     overlay.classList.remove('active');
-    document.body.style.overflow = ' ';
+    document.body.style.overflow = '';
 }
 
 burger.addEventListener('click', openMenu);
@@ -26,4 +26,5 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && menu.classList.contains('open')) {
     closeMenu();
   }
+});
 
