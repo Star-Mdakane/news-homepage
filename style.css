@@ -418,7 +418,7 @@ nav a:hover {
         }
         
     .menu.open {
-        ttamsform:translateX(0);
+        transform:translateX(0);
     }
     
 }
