@@ -4,7 +4,7 @@ const burger = document.getElementById('burger');
 
 const overlay = document.createElement('div');
 overlay.classList.add('overlay');
-document.body.appendChild('overlay');
+document.body.appendChild(overlay);
 
 const openMenu = () => {
     menu.classList.add('open');
